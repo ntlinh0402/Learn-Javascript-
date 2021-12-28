@@ -1,7 +1,8 @@
 Array.prototype.map2 =function(callback){
     var arrayLength = this.length;
     for (var i=0; i < arrayLength; ++i){
-        callback(this[i], i);
+        var result = callback(this[i], i);
+        console.log('result:', result)
     }
 }
 var courses =[
