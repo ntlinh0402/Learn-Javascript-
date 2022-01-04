@@ -22,3 +22,12 @@
 
 
 // STOP
+// bỏ hành vi nổi thẻ cha
+document.querySelector('div').onclick=function(e){
+    console.log('DIV')
+}
+document.querySelector('button').onclick=function(e){
+    e.stopPropagation();
+    console.log('Click me')
+    
+}
